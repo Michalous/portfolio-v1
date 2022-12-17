@@ -5,41 +5,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Michal Skalsky // Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <div class="logo">
+      <img id="personal_logo" src="./images/logo.jpeg" alt="personal logo">
+    </div>
     <nav>
+      <ul>
+        <li>About</li>
+        <li>Work</li>
+        <li>Contact</li>
+      </ul>
     </nav>
   </header>
 
+  <!-- <div class="empty"></div> -->
+
   <!-- hero banner -->
   <section class="hero-banner">
+    <img src="./images/IMG_0923.jpeg" alt="">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h1 class="hello_world">Hello, World!</h1>
+      <!-- <h2 class="hello_text">Welcome to my portfolio website! Here you will find a collection of my past projects and accomplishments, as well as a little bit about who I am and what I do.</h2> -->
     </div>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
+      <img id="avatar_pic" src="./images/avatar.png" alt="">
+      <br>
       <h2>About Me</h2>
+      <br>
+      <div class="about_text">
+        <p>My name is Michal. I was born in North-East Czech Republic in 1981. I currently live with my wife and children in probably the most beautiful part of England - somewhere on the border between Kent and East Sussex.</p>
+        <p>I’m interested in software development and computational problem solving. I’m working hard to make a transition into tech and the purpose of this website is to help me in my endeavour.</p>
+      </div>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <h2>Work</h2>
+      <div class="work-intro">
+        <img id="portfolio-main" src="./images/IMG_7281.JPG" alt="">
+        <div class="work-text">
+          <h2>My work</h2>
+          <div>
+            <p>Below, you will find a selection of projects that showcase my skills and interests in software development. Whether it's my first attempt with hangman made in Flask or vanilla JS snake, I am constantly striving to learn and create meaningful work that makes an impact.</p>
+          </div>
+        </div>
+      </div>
+      <div class="list-of-projects">
+        <a href="https://lightlander.co.uk">
+          <img src="./images/lightlander.png" alt="">
+        </a>
+        <div class="main-project">
+          <h3>lightlander.co.uk</h3>
+          <p>I tried to create a visually pleasing website for a semi ficticious product. It's made with a help of Bootstrap template and a bit of vanilla JS.</p>
+        </div>
+        <div class="other-projects">
+
+          <div class="bubble-sort projects">
+            <div class="project-image">
+              <a href="https://michalous.github.io/bubble-sort/">
+                <img class="project-images" src="./images/bubble-sort.png" alt="">
+              </a>
+            </div>
+            <div class="project-description">
+              <h3>Bubble sort visualization</h3>
+              <p>I first saw this visualization in one of the online CS lessons and decided to give it a try and build one for myself. It was one of very frustrating experiences. I wanted to build it with JS canvas but it didn't work for me as I don't fully understand how JavaScript is rendering the data on canvas. It worked in Python and it works in JS with Plotly but for some reason not with canvas.</p>
+            </div>
+          </div>
+          
+          <div class="math-random projects"> 
+            <div class="project-description">
+              <h3>Playing with Math.random()</h3>
+              <p>It's very satisfying to watch computer compute a stuff. Here are four little projects built with a help of Math.random(). They are Monte Carlo integration, probabilities of rolling 2 dice, the birthday problem and shuffling of deck of cards.</p>
+            </div>
+            <div class="project-image">
+              <a href="https://michalous.github.io/bubble-sort/">
+                <img class="project-images" src="./images/random.png" alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="snake projects">
+            <div class="project-image">
+              <a href="https://lightlander.co.uk/snake.html">
+                <img class="project-images" src="./images/snake-l.png" alt="">
+              </a>
+            </div>
+            <div class="project-description">
+              <h3>Snake game</h3>
+              <p>Classical game of snake made with vanilla JavaScript from scratch.</p>
+            </div>
+          </div>
+          
+          <div class="hangman projects"> 
+            <div class="project-description">
+              <h3>Hangman</h3>
+              <p>I've built this game after finishing CS50x final project - finance. The design is borrowed from the project (it's built in Flask) and game was inspired by other project - MIT's intro to CS with Python. This is a fusion of 2 projects. You have to register to play. This was my very first attempt to deploy a webapp and today I would build it differently.</p>
+            </div>
+            <div class="project-image">
+              <a href="http://michalous.pythonanywhere.com">
+                <img class="project-images" src="./images/hangman.png" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+      <div class="form_container">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="form-control">
+                <input type="text" required placeholder="Your Email:">   
+            </div>
+
+            <div class="form-control">
+                <textarea placeholder="Your query:" name="" id="" cols="21" rows="5"></textarea>
+            </div>
+
+            <button class="btn" disabled>Send</button>
+
+            <p class="text">Or send me an email to:</p>
+            <p>chronosonuk@gmail.com</p>
+        </form>
+    </div>
     </section>
   </main>
+  <footer>
+    <img class="footer_logo" src="./images/logo_lightlander_white.png" alt="">
+    <div class="rights">
+      <p>Copyright &copy; Michal Skalsky 2022</p>
+    </div>
+  </footer>
 </body>
 
 </html>
