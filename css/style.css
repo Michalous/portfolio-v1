@@ -56,6 +56,11 @@ img {
 }
 
 .hero-banner {
+  height: 1000px;
+  width: 100%;
+  background-image: url("../images/IMG_0923.jpeg");
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 
@@ -300,12 +305,20 @@ footer {
 }
 
 @media only screen and (max-width: 810px) {
+  .hero-banner {
+    height: 900px;
+  }
+  
   .hello_world {
     font-size: 35px;
   }
 }
 
 @media only screen and (max-width: 500px) {
+  .hero-banner {
+    height: 800px;
+  }
+  
   .page-wrapper {
     width: 100%;
   }
