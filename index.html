@@ -17,9 +17,9 @@
     </div>
     <nav>
       <ul>
-        <li>About</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -37,7 +37,7 @@
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <img id="avatar_pic" src="./images/avatar.png" alt="">
+      <img id="avatar_pic" src="./images/avatar.png" alt="profile picture">
       <br>
       <h2>About Me</h2>
       <br>
@@ -50,7 +50,7 @@
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <div class="work-intro">
-        <img id="portfolio-main" src="./images/IMG_7281.JPG" alt="">
+        <img id="portfolio-main" src="./images/IMG_7281.JPG" alt="Apollo 10 command module in museum">
         <div class="work-text">
           <h2>My work</h2>
           <div>
@@ -60,34 +60,34 @@
       </div>
       <div class="list-of-projects">
         <a href="https://lightlander.co.uk">
-          <img src="./images/lightlander.png" alt="">
+          <img src="./images/lightlander.png" alt="image of lightlander website">
         </a>
         <div class="main-project">
           <h3>lightlander.co.uk</h3>
-          <p>I tried to create a visually pleasing website for a semi ficticious product. It's made with a help of Bootstrap template and a bit of vanilla JS.</p>
+          <p class="grey">I tried to create a visually pleasing website for a semi ficticious product. It's made with a help of Bootstrap template and a bit of vanilla JS.</p>
         </div>
         <div class="other-projects">
 
           <div class="bubble-sort projects">
             <div class="project-image">
               <a href="https://michalous.github.io/bubble-sort/">
-                <img class="project-images" src="./images/bubble-sort.png" alt="">
+                <img class="project-images" src="./images/bubble-sort.png" alt="image of bar chart">
               </a>
             </div>
             <div class="project-description">
               <h3>Bubble sort visualization</h3>
-              <p>I first saw this visualization in one of the online CS lessons and decided to give it a try and build one for myself. It was one of very frustrating experiences. I wanted to build it with JS canvas but it didn't work for me as I don't fully understand how JavaScript is rendering the data on canvas. It worked in Python and it works in JS with Plotly but for some reason not with canvas.</p>
+              <p class="grey">I first saw this visualization in one of the online CS lessons and decided to give it a try and build one for myself. It was one of very frustrating experiences. I wanted to build it with JS canvas but it didn't work for me as I don't fully understand how JavaScript is rendering the data on canvas. It worked in Python and it works in JS with Plotly but for some reason not with canvas.</p>
             </div>
           </div>
           
           <div class="math-random projects"> 
             <div class="project-description">
               <h3>Playing with Math.random()</h3>
-              <p>It's very satisfying to watch computer compute a stuff. Here are four little projects built with a help of Math.random(). They are Monte Carlo integration, probabilities of rolling 2 dice, the birthday problem and shuffling of deck of cards.</p>
+              <p class="grey">It's very satisfying to watch computer compute a stuff. Here are four little projects built with a help of Math.random(). They are Monte Carlo integration, probabilities of rolling 2 dice, the birthday problem and shuffling of deck of cards.</p>
             </div>
             <div class="project-image">
-              <a href="https://michalous.github.io/bubble-sort/">
-                <img class="project-images" src="./images/random.png" alt="">
+              <a href="https://michalous.github.io/math-random/">
+                <img class="project-images" src="./images/random.png" alt="image of sin function">
               </a>
             </div>
           </div>
@@ -95,23 +95,23 @@
           <div class="snake projects">
             <div class="project-image">
               <a href="https://lightlander.co.uk/snake.html">
-                <img class="project-images" src="./images/snake-l.png" alt="">
+                <img class="project-images" src="./images/snake-l.png" alt="image of snake game">
               </a>
             </div>
             <div class="project-description">
               <h3>Snake game</h3>
-              <p>Classical game of snake made with vanilla JavaScript from scratch.</p>
+              <p class="grey">Classical game of snake made with vanilla JavaScript from scratch.</p>
             </div>
           </div>
           
           <div class="hangman projects"> 
             <div class="project-description">
               <h3>Hangman</h3>
-              <p>I've built this game after finishing CS50x final project - finance. The design is borrowed from the project (it's built in Flask) and game was inspired by other project - MIT's intro to CS with Python. This is a fusion of 2 projects. You have to register to play. This was my very first attempt to deploy a webapp and today I would build it differently.</p>
+              <p class="grey">I've built this game after finishing CS50x final project - finance. The design is borrowed from the project (it's built in Flask) and game was inspired by other project - MIT's intro to CS with Python. This is a fusion of 2 projects. You have to register to play. This was my very first attempt to deploy a webapp and today I would build it differently.</p>
             </div>
             <div class="project-image">
               <a href="http://michalous.pythonanywhere.com">
-                <img class="project-images" src="./images/hangman.png" alt="">
+                <img class="project-images" src="./images/hangman.png" alt="image of hangman game">
               </a>
             </div>
           </div>
@@ -136,7 +136,7 @@
             <button class="btn" disabled>Send</button>
 
             <p class="text">Or send me an email to:</p>
-            <p>chronosonuk@gmail.com</p>
+            <p class="text-email">chronosonuk@gmail.com</p>
         </form>
     </div>
     </section>
